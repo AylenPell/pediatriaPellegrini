@@ -68,8 +68,6 @@ footer{
     display: grid;
     width: 100%;
     height: auto;
-    /*grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr;*/
     grid-template-areas: 
     "divSec1i divSec2i divSec3i"
     "divSec1t divSec2t divSec3t" ;
@@ -210,7 +208,7 @@ footer{
 }
 .divDatosII{
     display: grid;
-    grid-template-rows: (6 0.05fr);
+    grid-template-rows: repeat(6, 0.05fr);
     grid-template-columns: 0.05fr 0.5fr;
     grid-template-areas: 
     "titSur titSur"
@@ -264,7 +262,7 @@ footer{
 }
 .divDatosIII{
     display: grid;
-    grid-template-rows: (6 0.5fr);
+    grid-template-rows: repeat(6, 0.5fr);
     grid-template-columns: 0.05fr 0.5fr;
     grid-template-areas: 
     "titCentro titCentro"
@@ -686,7 +684,8 @@ textarea{
 @media (max-width: 500px){
     .secciones {
         display: grid;
-        grid-template-columns: 0.5fr;
+        justify-items: center;
+        grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
         grid-template-areas: 
         "divSec1t"
@@ -711,12 +710,17 @@ textarea{
     }
     .divSec1i, .divSec2i, .divSec3i {
         text-align: center;
-        background-color: #33a66b;
+        padding-bottom: 1rem;
     }
     .divSec1t, .divSec2t, .divSec3t {
-        margin-bottom: 0rem;
-        margin-top: 2rem;
-        padding-bottom: 1.5rem;
+        margin: 0%;
+        padding: 1.5rem 10%;
         text-align: center;
+    }
+    .divSec2i, .divSec2t{
+        background-color: #33a66b;
+    }
+    .tituloPieV, .masInfoV{
+        color: #373f47;
     }
 }
