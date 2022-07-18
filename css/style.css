@@ -78,14 +78,48 @@ footer{
 .presentacion2{
     grid-area: presentacion2;
 }
+.nnsDad{
+    grid-area: nnsDad;
+}
 .imgFondo{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 0.1fr 1fr;
     grid-template-areas: 
-    "presentacion"
-    "presentacion2";
+    "presentacion ."
+    "presentacion2 nnsDad";
 }
+
+/*ANIMACION NNS*/
+.nnsDad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.divNn1{
+    transition: all 0.5s ease-out;
+}
+.divNn2{
+    transition: all 0.5s ease-in-out;
+}
+.divNn3{
+    transition: all 0.5s ease;
+}
+.divNn4{
+    transition: all 0.5s ease-out;
+}
+.nnsDad:hover .divNn1,
+.nnsDad:hover .divNn2,
+.nnsDad:hover .divNn3,
+.nnsDad:hover .divNn4
+{
+    transform: translateY(-23rem)
+}
+
 /*GRIDS SECCIONES*/
 .imgFondo{
     grid-area: imgFondo;
@@ -351,19 +385,19 @@ a:hover{
     padding: 0.625rem;
     margin-top: 1.25rem;
     margin-left: 1.563rem;
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-style: oblique;
     font-weight: 700;
     text-align: left;
     color: #d86c0d;
-    width: 45%;
+    width: 60%;
 }
 .presentacionTxt{
     padding: 0.625rem;
     margin-left: 1.563rem;
     text-align: left;
-    font-size: 1.3rem;
-    width: 50%;
+    font-size: 1.5rem;
+    width: 66%;
 }
 
 /*SECCIONES EN INDEX*/
@@ -611,6 +645,12 @@ textarea{
 
 /*MEDIA QUERieS*/
 @media (max-width: 768px){
+    .imgFondo{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "presentacion"
+        "presentacion2";
+    }
     .secciones {
         display: grid;
         grid-template-columns: 1fr 1fr;
