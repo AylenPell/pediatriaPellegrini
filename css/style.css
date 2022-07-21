@@ -90,7 +90,7 @@ footer{
     "presentacion2 nnsDad";
 }
 
-/*ANIMACION NNS*/
+/*ANIMACION NNS en index*/
 .nnsDad{
     display: flex;
     flex-direction: row;
@@ -498,6 +498,71 @@ ol, .ilOl{
     width: 31.25rem;
 }
 
+/* ANIMACION NNS pagina */
+.fondoAnim{
+    background-color: #373f47;
+    padding: 10rem;
+}
+.divNn1B:hover{
+    animation: Nn1B 5s;
+}
+@keyframes Nn1B{
+    0%{
+        transform: rotateY(180deg);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    99%{
+        transform: translateX(10rem);
+    }
+}
+
+.divNn2B:hover{
+    animation: Nn2B 4s;
+}
+@keyframes Nn2B{
+    1%{
+        transform: translateY(-15rem);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    99%{
+        transform: rotateX(180deg);
+    }
+}
+
+.divNn3B:hover{
+    animation: Nn3B 4s;
+}
+@keyframes Nn3B{
+    1%{
+        transform: scale(1.3);
+    }
+    50%{
+        transform: rotateX(180deg)
+    }
+    99%{
+        transform: translateX(10rem);
+    }
+}
+
+.divNn4B:hover{
+    animation: Nn4B 4s;
+}
+@keyframes Nn4B{
+    1%{
+        transform: translateY(-12rem);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    99%{
+        transform: scale(1.3);
+    }
+}
+
 /* STAFF */
 .fondoStaff{
     background-color: #e2f3e9;
@@ -650,6 +715,9 @@ textarea{
         grid-template-areas: 
         "presentacion"
         "presentacion2";
+    }
+    .nnsDad{
+        display: none;
     }
     .secciones {
         display: grid;
