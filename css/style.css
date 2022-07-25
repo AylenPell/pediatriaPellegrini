@@ -307,8 +307,8 @@ footer{
     "iconoM2 infoMail2";
 }
 
-/* NAVBAR */
-header{
+/* NAVBAR/s */
+header, footer{
     font-family: 'Lato', sans-serif;
 }
 .navMia{
@@ -319,6 +319,21 @@ header{
 }
 .iso:hover{
     transform: scale(1.2);
+}
+.copy{
+    font-weight: 200;
+    font: size 0.6rem;
+    color: #373f47;
+}
+a{
+    text-decoration: none;
+    color:#33a66b
+}
+a:hover{
+    color:#f3790d;
+}
+.hamburguesa{
+    margin-right: 2rem;
 }
 
 /* PRESENTACION */
@@ -764,7 +779,7 @@ textarea{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 576px){
     .secciones {
         display: grid;
         justify-items: center;
