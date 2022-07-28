@@ -700,6 +700,9 @@ textarea{
 
 /*MEDIA QUERieS*/
 @media (max-width: 768px){
+    .hamburguesa{
+        justify-content: end;
+    }
     .imgFondo{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -780,6 +783,9 @@ textarea{
 }
 
 @media (max-width: 576px){
+    .body{
+        width: 100%;
+    }
     .secciones {
         display: grid;
         justify-items: center;
@@ -793,32 +799,54 @@ textarea{
         "divSec3t" 
         "divSec3i" ;
     }
+    .navMia{
+        padding-left: 0%;
+        margin: 0%;
+    }
     .frase{
         width: 100%;
         padding: 0.3rem;
         margin-left: 0.2rem;
+        font-size:x-large;
     }
     .presentacionTxt{
         width: 100%;
         padding: 0.3rem;
         margin-left: 0.2rem;
-    }
-    .ul{
-        flex-wrap: wrap;
+        font-size: medium;
     }
     .divSec1i, .divSec2i, .divSec3i {
+        margin: 0%;
+        padding:0%;
         text-align: center;
-        padding-bottom: 1rem;
     }
     .divSec1t, .divSec2t, .divSec3t {
         margin: 0%;
-        padding: 1.5rem 10%;
+        padding: 1rem 2.5%;
         text-align: center;
+    }
+    .tituloPie{
+        padding: 0% 2.5%;
+    }
+    .pieImg{
+        padding: 0% 2.5%;
+        font-size: small;
     }
     .divSec2i, .divSec2t{
         background-color: #33a66b;
     }
     .tituloPieV, .masInfoV{
         color: #373f47;
+    }
+    .imgFondo{
+        padding: 2.5%;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;    
+    }
+    .logoEnFoot{
+        display: none;
     }
 }
