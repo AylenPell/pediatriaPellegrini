@@ -1,0 +1,16 @@
+.presentacionTxt{
+    display: grid;
+    grid-template-areas: 
+    "presentacionFrase"
+    "presentacionPs"
+    "nnsDad";
+    .presentacionFrase{
+        grid-area: presentacionFrase;
+    }
+    .presentacionPs{
+        grid-area: presentacionPs;
+    }
+    .nnsDad{
+        grid-area: nnsDad;
+    }
+}

@@ -1,0 +1,114 @@
+// MAIN INDEX
+.presentacion{
+    $padd: 0.5rem;
+    $margL: 2%;
+    width: 100%;
+    background-image: url(../img/img0.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 3%;
+    font-family: $ffPrincipal;
+    .presentacionTit{
+        display: flex;
+        align-items: center;
+        color: $clrGris;
+        h1{
+            padding: $padd;
+            margin-left: $margL;
+            background-color: $clrReClaro;
+            text-align: center;
+            font-weight: 900;
+            font-size: 1.6rem;
+            color: $clrVerde;
+            height: 3rem;
+            width: 15rem;
+        }
+        h2{
+            @extend h1;
+            margin-left: 0%;
+            background-color: $clrVerde;
+            color: $clrReClaro;
+        }
+    }
+    .presentacionTxt {
+        h3{
+            padding: $padd;
+            margin-top: 1.25rem;
+            margin-left: $margL;
+            font-size: 1.5rem;
+            font-style: oblique;
+            font-weight: 700;
+            text-align: left;
+            color: $clrNaranja;
+        }
+        p{
+            padding: $padd;
+            margin-left: $margL;
+            text-align: left;
+            font-size: 1.3rem;
+        }
+    }
+    .nnsDad{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: $padd;
+        margin-left: $margL;
+        
+    }
+}
+
+// SECCIONES INDEX
+.secciones{ 
+    font-family: $ffPrincipal;
+    .seccionesTxt{
+        background-color: $clrGris;
+        h3{
+            padding: 3% 6% 0%;
+            color: $clrVerde;
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: left;
+        }
+        p{
+            padding: 0% 6% 5%;
+            margin-bottom: 0;
+            text-align: left;
+            font-size: 1rem;
+            color: $clrReClaro;
+            width: 100%;
+            a{
+                color: $clrVerde;
+                font-weight: 600;
+                &:hover{
+                color: $clrNaranja;
+                }
+            }
+        }
+    }
+    .seccionesImg{
+        background-color: $clrGris;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+    .s2Img{
+        background-color: $clrVerde;
+    }
+    .s2Txt{
+        background-color: $clrVerde;
+        h3{
+            color: $clrGris;
+        }
+        p{
+            a{
+                color: $clrGris;
+            }
+        }   
+    }
+}
+

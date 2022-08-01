@@ -1,0 +1,30 @@
+/*ANIMACION NNS en index*/
+.presentacion{
+    .nnsDad{
+        .divNn1{
+            transition: all 0.5s ease-out;
+            &:hover{
+                transform: translateY(-23rem);
+            }
+        }
+        .divNn2{
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: translateY(-23rem);
+            }
+        }
+        .divNn3{
+            transition: all 0.5s ease;
+            &:hover{
+                transform: translateY(-23rem);
+            }
+        }
+        .divNn4{
+            transition: all 0.5s ease-out;
+            &:hover{
+                transform: translateY(-23rem);
+            }
+        }
+    }
+}
+

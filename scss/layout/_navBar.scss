@@ -1,0 +1,27 @@
+.miNav{
+    font-family: $ffPrincipal;
+    padding-left: 3%;
+    height: 5%;
+    a{
+        text-decoration: none;
+        &:hover{
+            color: $clrVerde !important;
+        }
+    }
+    .hamburguesa{
+        margin-right: 2rem;
+    }
+    .redes:hover{
+            transform: scale(1.2);
+        }
+    .iso:hover{
+        transform: scale(1.2);
+    }
+    .copy{
+        
+        font-weight: 200;
+        font-size: 0.6rem;
+        color: #373f47;
+    }
+}
+
