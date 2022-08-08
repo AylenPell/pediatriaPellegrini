@@ -1,0 +1,111 @@
+main{
+    $paddImg: 0.5rem;
+    $paddP: 0.15rem;
+    
+    section{
+        /*Formulario*/
+        .formulario{
+            border: 2px;
+            border-radius: 4px;
+            border-style: solid;
+            border-color: $clrClaro;
+            width: 20rem;
+            margin: 1rem;
+            form{
+
+                ul{
+                    list-style: none;
+                    padding-left: 1rem;
+                    li{
+                        font-family: $ffPrincipal;
+                        color: $clrGris;
+                        div{
+                            color: $clrVerde;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            padding: 0.5rem 0;
+                        }
+                        input{
+                            color: $clrGris;
+                            width: 17.5rem;
+                            height: 1.8rem;
+                            margin: 0.5rem 0;
+                            padding-left: 0.5rem;
+                        }
+                        label{
+                            @extend input;
+                            padding-left: 0;
+                            margin: 0.5rem 0 0;
+                        }
+                        select{
+                            @extend input;
+                            }
+                        textarea{
+                            @extend input;
+                            height: 5rem;
+                        }
+                        .check{
+                            width: 0.9rem;
+                            height: 0.9rem;
+                            padding: 0;   
+                        }
+                        .labelCheck{
+                            height: 2rem;
+                            margin: 0;
+                            padding-left: 0.1rem;
+                            padding-bottom: 0.7rem;
+                        }
+                        .boton1{
+                            background-color: $clrVerde;
+                            color: $clrReClaro;
+                            width: 8rem;
+                            height: 1.8rem;
+                            margin: 0.5rem 0;
+                            padding-left: 0;
+                            border: 0;
+                        }
+                        .boton2{
+                            @extend .boton1;
+                            margin-left: 1.3rem;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Cards Datos*/
+        .card{
+            border-color: $clrClaro;
+        }
+        .card-body{
+            h5{
+                font-family: $ffPrincipal;
+                font-size: 1rem;
+                font-weight: 600;
+                color: $clrGris;
+            }
+            img{ 
+                padding-right: $paddImg;
+            }
+            p{
+                padding-top: $paddP;
+            }
+        }
+        .cB1{
+            padding-bottom: 0;
+        }
+        ul{
+            li{
+                div{
+                    img{
+                        padding-right: $paddImg;
+                    }
+                    p{
+                        margin:0;
+                        padding-top: $paddP;
+                    }
+                }
+            }
+        }
+}    

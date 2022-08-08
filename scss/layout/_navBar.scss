@@ -1,5 +1,6 @@
 .miNav{
     font-family: $ffPrincipal;
+    font-size: 1rem;
     padding-left: 3%;
     height: 5%;
     a{
@@ -10,7 +11,12 @@
     }
     .hamburguesa{
         margin-right: 2rem;
-    }
+        border: 0;
+        span{
+            border:0;
+        }
+    } 
+
     .redes:hover{
             transform: scale(1.2);
         }
@@ -24,4 +30,3 @@
         color: #373f47;
     }
 }
-

@@ -27,9 +27,72 @@
             grid-area: s3Txt;
         }
     }
+    .presentacion{
+        &Txt{
+            h3{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    main{
+        .containerStaff{
+            section{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            }
+        }
+        .containerContacto{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "formulario formulario"
+            "cardSur cardCentro";
+            .formulario{
+                grid-area: formulario;
+                width: 95%;
+                form{
+                    ul{
+                        li{
+                            input{
+                                width: 93%;
+                            }
+                            label{
+                                width: 93%;
+                            }
+                            select{
+                                width: 93%;
+                                }
+                            textarea{
+                                width: 93%;
+                            }
+                            .check{
+                                width: 1rem; 
+                            }
+                            .lebelCheck{
+                                width: 1rem;
+                            }
+                            .boton1{
+                                width: 45%;
+                            }
+                            .boton2{
+                                width: 45%;
+                            }
+                        }
+                    }
+                }
+            }
+            .cardSur{
+                grid-area: cardSur;
+            }
+            .cardCentro{
+                grid-area: cardCentro;
+            }
+        }
+    }
+
 
 }
-
 
 @media (min-width: 1024px){
     .presentacion{
@@ -52,5 +115,80 @@
         grid-template-areas: 
         "s1Img s2Img s3Img"
         "s1Txt s2Txt s3Txt" ;
+    }
+    .containerSeccion{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-areas:
+        "imgSeccion txtSeccion"
+        "vacunas vacunas";
+        .txtSeccion{
+            grid-area: txtSeccion;
+            width: 35rem;
+            height: 28rem;
+            overflow: scroll;
+            h3{
+                margin-top: 0rem;
+                padding-top: 0;
+            }
+        }
+        .imgSeccion{
+            grid-area: imgSeccion; 
+            picture{
+                img{
+                    padding: 0.5rem;
+                    width: 100%;
+                    height: auto;   
+                }
+            }  
+    
+        }
+        .vacunas{
+            grid-area: vacunas;
+        }
+    }
+    .containerContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "formulario cardSur cardCentro";
+        
+        .formulario{
+            grid-area: formulario;
+            width: 20rem;
+            form{
+                ul{
+                    li{
+                        input{
+                            width: 17.5rem;
+                        }
+                        label{
+                            width: 17.5rem;
+                        }
+                        select{
+                            width: 17.5rem;
+                            }
+                        textarea{
+                            width: 17.5rem;
+                        }
+                        .check{
+                            width: 0.9rem; 
+                        }
+                        .boton1{
+                            width: 8rem;
+                        }
+                        .boton2{
+                            width: 8rem;
+                        }
+                    }
+                }
+            }
+        }
+        .cardSur{
+            grid-area: cardSur;
+        }
+        .cardCentro{
+            grid-area: cardCentro;
+        }
     }
 }
