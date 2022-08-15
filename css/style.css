@@ -36,6 +36,7 @@ body {
   transform: scale(1.2);
 }
 .miNav .copy {
+  margin-bottom: 0;
   font-weight: 200;
   font-size: 0.6rem;
   color: #373f47;
@@ -108,6 +109,7 @@ body {
   justify-content: space-between;
   padding: 0.5rem;
   margin-left: 2%;
+  align-items: end;
 }
 
 .secciones {
@@ -146,8 +148,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.secciones .seccionesImg img {
+.secciones .seccionesImg picture {
+  width: 100%;
+}
+.secciones .seccionesImg picture img {
   max-width: 100%;
+  width: 100%;
 }
 .secciones .s2Img {
   background-color: #33A66B;
@@ -327,9 +333,16 @@ main section .formulario {
   width: 20rem;
   margin: 1rem auto;
 }
+main section .formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 main section .formulario form ul {
+  width: 100%;
+  padding: 1rem;
   list-style: none;
-  padding-left: 1rem;
 }
 main section .formulario form ul li {
   font-family: "Lato", sans-serif;
@@ -354,28 +367,31 @@ main section .formulario form ul li label {
 }
 main section .formulario form ul li textarea {
   height: 5rem;
+  resize: none;
+}
+main section .formulario form ul li .labelCheck {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 0.5rem;
+}
+main section .formulario form ul li .boton {
+  background-color: #33A66B;
+  color: #F4FFF8;
+  width: 49%;
+  height: 1.8rem;
+  padding-left: 0;
+  border: 0;
 }
 main section .formulario form ul li .check {
   width: 0.9rem;
   height: 0.9rem;
   padding: 0;
-}
-main section .formulario form ul li .labelCheck {
-  height: 2rem;
   margin: 0;
-  padding-left: 0.1rem;
-  padding-bottom: 0.7rem;
-}
-main section .formulario form ul li .boton {
-  background-color: #33A66B;
-  color: #F4FFF8;
-  width: 8rem;
-  height: 1.8rem;
-  padding-left: 0;
-  border: 0;
 }
 main .card {
   border-color: #e8f1f0;
+  border-width: 2px;
 }
 main .card-body h5 {
   font-family: "Lato", sans-serif;
@@ -443,7 +459,7 @@ main ul li div p {
     width: 95%;
   }
   main .containerContacto .formulario form ul {
-    padding: 1rem;
+    margin: 1rem;
   }
   main .containerContacto .formulario form ul li input, main .containerContacto section .formulario form ul li label, main section .containerContacto .formulario form ul li label, main .containerContacto section .formulario form ul li select, main section .containerContacto .formulario form ul li select, main .containerContacto section .formulario form ul li textarea, main section .containerContacto .formulario form ul li textarea {
     width: 100%;
@@ -460,13 +476,7 @@ main ul li div p {
   main .containerContacto .formulario form ul li .check {
     width: 1rem;
   }
-  main .containerContacto .formulario form ul li .lebelCheck {
-    width: 1rem;
-  }
-  main .containerContacto .formulario form ul li .boton1 {
-    width: 49%;
-  }
-  main .containerContacto .formulario form ul li .boton2 {
+  main .containerContacto .formulario form ul li .boton {
     width: 49%;
   }
   main .containerContacto .cardSur {
@@ -478,8 +488,8 @@ main ul li div p {
 }
 @media (min-width: 1024px) {
   .presentacion .presentacionTxt {
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "presentacionFrase ." "presentacionPs nnsDad";
+    grid-template-columns: 2fr 1fr !important;
+    grid-template-areas: "presentacionFrase ." "presentacionPs nnsDad" !important;
   }
   .presentacion .nnsDad {
     justify-content: flex-end;
@@ -519,13 +529,12 @@ main ul li div p {
     grid-area: vacunas;
   }
   .containerContacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "formulario cardSur cardCentro";
+    padding: 1rem;
+    grid-template-columns: 2fr 1fr 1fr !important;
+    grid-template-areas: "formulario cardSur cardCentro" !important;
   }
   .containerContacto .formulario {
-    grid-area: formulario;
-    width: 20rem;
+    margin-bottom: 0;
   }
   .containerContacto .formulario form ul li input, .containerContacto main section .formulario form ul li label, main section .containerContacto .formulario form ul li label, .containerContacto main section .formulario form ul li select, main section .containerContacto .formulario form ul li select, .containerContacto main section .formulario form ul li textarea, main section .containerContacto .formulario form ul li textarea {
     width: 17.5rem;
@@ -538,47 +547,47 @@ main ul li div p {
   }
   .containerContacto .formulario form ul li textarea {
     width: 17.5rem;
+    min-height: 12rem;
   }
-  .containerContacto .formulario form ul li .check {
-    width: 0.9rem;
+  .containerContacto .formulario form ul li .boton {
+    width: 49%;
   }
-  .containerContacto .formulario form ul li .boton1 {
-    width: 8rem;
-  }
-  .containerContacto .formulario form ul li .boton2 {
-    width: 8rem;
-  }
-  .containerContacto .cardSur {
-    grid-area: cardSur;
-  }
-  .containerContacto .cardCentro {
-    grid-area: cardCentro;
+  .containerContacto .cardSur,
+.containerContacto .cardCentro {
+    margin-bottom: 0 !important;
   }
 }
 /*ANIMACION NNS en index*/
+.presentacion .nnsDad:hover .divNn1,
+.presentacion .nnsDad:hover .divNn2,
+.presentacion .nnsDad:hover .divNn3,
+.presentacion .nnsDad:hover .divNn4 {
+  transform: translateY(-23rem);
+}
 .presentacion .nnsDad .divNn1 {
   transition: all 0.5s ease-out;
-}
-.presentacion .nnsDad .divNn1:hover {
-  transform: translateY(-23rem);
 }
 .presentacion .nnsDad .divNn2 {
   transition: all 0.5s ease-in-out;
 }
-.presentacion .nnsDad .divNn2:hover {
-  transform: translateY(-23rem);
-}
 .presentacion .nnsDad .divNn3 {
   transition: all 0.5s ease;
-}
-.presentacion .nnsDad .divNn3:hover {
-  transform: translateY(-23rem);
 }
 .presentacion .nnsDad .divNn4 {
   transition: all 0.5s ease-out;
 }
-.presentacion .nnsDad .divNn4:hover {
-  transform: translateY(-23rem);
+
+.fondoAnimado {
+  animation: fondoAnimacion 10s linear infinite alternate;
+}
+
+@keyframes fondoAnimacion {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,30 +1,39 @@
 /*ANIMACION NNS en index*/
 .presentacion{
     .nnsDad{
-        .divNn1{
-            transition: all 0.5s ease-out;
-            &:hover{
+        &:hover{
+            .divNn1,
+            .divNn2,
+            .divNn3,
+            .divNn4{
                 transform: translateY(-23rem);
             }
+        }
+        .divNn1{
+            transition: all 0.5s ease-out;
         }
         .divNn2{
             transition: all 0.5s ease-in-out;
-            &:hover{
-                transform: translateY(-23rem);
-            }
         }
         .divNn3{
             transition: all 0.5s ease;
-            &:hover{
-                transform: translateY(-23rem);
-            }
         }
         .divNn4{
             transition: all 0.5s ease-out;
-            &:hover{
-                transform: translateY(-23rem);
-            }
         }
     }
+
 }
 
+.fondoAnimado {
+        animation: fondoAnimacion 10s linear infinite alternate;
+    }
+    
+    @keyframes fondoAnimacion {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }

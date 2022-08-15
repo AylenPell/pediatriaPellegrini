@@ -53,8 +53,9 @@
                 width: 95%;
                 form{
                     ul{
-                        padding: 1rem;
+                        margin: 1rem;
                         li{
+                            
                             input{
                                 width: 100%;
                             }
@@ -70,13 +71,7 @@
                             .check{
                                 width: 1rem; 
                             }
-                            .lebelCheck{
-                                width: 1rem;
-                            }
-                            .boton1{
-                                width: 49%;
-                            }
-                            .boton2{
+                            .boton{
                                 width: 49%;
                             }
                         }
@@ -98,10 +93,10 @@
 @media (min-width: 1024px){
     .presentacion{
         .presentacionTxt{
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 2fr 1fr !important;
             grid-template-areas: 
             "presentacionFrase ."
-            "presentacionPs nnsDad";
+            "presentacionPs nnsDad" !important;
         }
         .nnsDad{
             justify-content: flex-end;
@@ -149,14 +144,13 @@
         }
     }
     .containerContacto{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem;
+        grid-template-columns: 2fr 1fr 1fr !important;
         grid-template-areas: 
-        "formulario cardSur cardCentro";
+        "formulario cardSur cardCentro" !important;
         
         .formulario{
-            grid-area: formulario;
-            width: 20rem;
+            margin-bottom: 0;
             form{
                 ul{
                     li{
@@ -171,25 +165,19 @@
                             }
                         textarea{
                             width: 17.5rem;
+                            min-height: 12rem;
                         }
-                        .check{
-                            width: 0.9rem; 
-                        }
-                        .boton1{
-                            width: 8rem;
-                        }
-                        .boton2{
-                            width: 8rem;
+                        .boton{
+                            width: 49%;
                         }
                     }
                 }
             }
         }
-        .cardSur{
-            grid-area: cardSur;
-        }
+
+        .cardSur,
         .cardCentro{
-            grid-area: cardCentro;
+            margin-bottom: 0 !important;
         }
     }
 }

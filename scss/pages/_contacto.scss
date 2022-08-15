@@ -12,10 +12,11 @@ main{
             width: 20rem;
             margin: 1rem auto;
             form{
-
+                @include flexCol;
                 ul{
+                    width: 100%;
+                    padding: 1rem;
                     list-style: none;
-                    padding-left: 1rem;
                     li{
                         font-family: $ffPrincipal;
                         color: $clrGris;
@@ -43,25 +44,27 @@ main{
                         textarea{
                             @extend input;
                             height: 5rem;
-                        }
-                        .check{
-                            width: 0.9rem;
-                            height: 0.9rem;
-                            padding: 0;   
+                            resize: none;
                         }
                         .labelCheck{
-                            height: 2rem;
+                            display: flex;
+                            align-items: center;
                             margin: 0;
-                            padding-left: 0.1rem;
-                            padding-bottom: 0.7rem;
+                            padding-left: .5rem;
                         }
                         .boton{
                             background-color: $clrVerde;
                             color: $clrReClaro;
-                            width: 8rem;
+                            width: 49%;
                             height: 1.8rem;
                             padding-left: 0;
                             border: 0;
+                        }
+                        .check{
+                            width: 0.9rem;
+                            height: 0.9rem;
+                            padding: 0;  
+                            margin: 0; 
                         }
                     }
                 }
@@ -72,6 +75,7 @@ main{
         /*Cards Datos*/
         .card{
             border-color: $clrClaro;
+            border-width: 2px;
         }
         .card-body{
             h5{
