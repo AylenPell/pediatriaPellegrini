@@ -146,6 +146,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.secciones .seccionesImg img {
+  max-width: 100%;
+}
 .secciones .s2Img {
   background-color: #33A66B;
 }
@@ -322,7 +325,7 @@ main section .formulario {
   border-style: solid;
   border-color: #e8f1f0;
   width: 20rem;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 main section .formulario form ul {
   list-style: none;
@@ -363,17 +366,13 @@ main section .formulario form ul li .labelCheck {
   padding-left: 0.1rem;
   padding-bottom: 0.7rem;
 }
-main section .formulario form ul li .boton1, main section .formulario form ul li .boton2 {
+main section .formulario form ul li .boton {
   background-color: #33A66B;
   color: #F4FFF8;
   width: 8rem;
   height: 1.8rem;
-  margin: 0.5rem 0;
   padding-left: 0;
   border: 0;
-}
-main section .formulario form ul li .boton2 {
-  margin-left: 1.3rem;
 }
 main .card {
   border-color: #e8f1f0;
@@ -443,17 +442,20 @@ main ul li div p {
     grid-area: formulario;
     width: 95%;
   }
+  main .containerContacto .formulario form ul {
+    padding: 1rem;
+  }
   main .containerContacto .formulario form ul li input, main .containerContacto section .formulario form ul li label, main section .containerContacto .formulario form ul li label, main .containerContacto section .formulario form ul li select, main section .containerContacto .formulario form ul li select, main .containerContacto section .formulario form ul li textarea, main section .containerContacto .formulario form ul li textarea {
-    width: 93%;
+    width: 100%;
   }
   main .containerContacto .formulario form ul li label {
-    width: 93%;
+    width: 100%;
   }
   main .containerContacto .formulario form ul li select {
-    width: 93%;
+    width: 100%;
   }
   main .containerContacto .formulario form ul li textarea {
-    width: 93%;
+    width: 100%;
   }
   main .containerContacto .formulario form ul li .check {
     width: 1rem;
@@ -461,11 +463,11 @@ main ul li div p {
   main .containerContacto .formulario form ul li .lebelCheck {
     width: 1rem;
   }
-  main .containerContacto .formulario form ul li .boton1, main .containerContacto section .formulario form ul li .boton2, main section .containerContacto .formulario form ul li .boton2 {
-    width: 45%;
+  main .containerContacto .formulario form ul li .boton1 {
+    width: 49%;
   }
   main .containerContacto .formulario form ul li .boton2 {
-    width: 45%;
+    width: 49%;
   }
   main .containerContacto .cardSur {
     grid-area: cardSur;
@@ -540,7 +542,7 @@ main ul li div p {
   .containerContacto .formulario form ul li .check {
     width: 0.9rem;
   }
-  .containerContacto .formulario form ul li .boton1, .containerContacto main section .formulario form ul li .boton2, main section .containerContacto .formulario form ul li .boton2 {
+  .containerContacto .formulario form ul li .boton1 {
     width: 8rem;
   }
   .containerContacto .formulario form ul li .boton2 {

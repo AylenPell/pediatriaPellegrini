@@ -53,18 +53,19 @@
                 width: 95%;
                 form{
                     ul{
+                        padding: 1rem;
                         li{
                             input{
-                                width: 93%;
+                                width: 100%;
                             }
                             label{
-                                width: 93%;
+                                width: 100%;
                             }
                             select{
-                                width: 93%;
+                                width: 100%;
                                 }
                             textarea{
-                                width: 93%;
+                                width: 100%;
                             }
                             .check{
                                 width: 1rem; 
@@ -73,10 +74,10 @@
                                 width: 1rem;
                             }
                             .boton1{
-                                width: 45%;
+                                width: 49%;
                             }
                             .boton2{
-                                width: 45%;
+                                width: 49%;
                             }
                         }
                     }

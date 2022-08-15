@@ -10,7 +10,7 @@ main{
             border-style: solid;
             border-color: $clrClaro;
             width: 20rem;
-            margin: 1rem;
+            margin: 1rem auto;
             form{
 
                 ul{
@@ -55,24 +55,19 @@ main{
                             padding-left: 0.1rem;
                             padding-bottom: 0.7rem;
                         }
-                        .boton1{
+                        .boton{
                             background-color: $clrVerde;
                             color: $clrReClaro;
                             width: 8rem;
                             height: 1.8rem;
-                            margin: 0.5rem 0;
                             padding-left: 0;
                             border: 0;
-                        }
-                        .boton2{
-                            @extend .boton1;
-                            margin-left: 1.3rem;
-                        }
                         }
                     }
                 }
             }
         }
+    }
 
         /*Cards Datos*/
         .card{
